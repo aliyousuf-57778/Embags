@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Premium Bags</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">AURA</div>
+        <nav>
+            <a href="index.html">Shop</a>
+            <a href="checkout.html" id="cart-link">Cart (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Elevate Your Everyday.</h1>
+            <p>Minimalist design meets uncompromising utility.</p>
+        </section>
+
+        <section class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <!-- Replace 'bag1.jpg' with your exact image file name -->
+                    <img src="bag1.jpg" alt="Aura Signature Tote" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h2>Aura Signature Tote</h2>
+                    <div class="price">
+                        <span class="original-price">Rs. 6,000</span>
+                        <span class="sale-price">Rs. 4,000</span>
+                    </div>
+                    <button onclick="addToCart('bag1', 'Aura Signature Tote', 4000, 'bag1.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <!-- Replace 'bag2.jpg' with your exact image file name -->
+                    <img src="bag2.jpg" alt="Aura Minimalist Backpack" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h2>Aura Minimalist Backpack</h2>
+                    <div class="price">
+                        <span class="original-price">Rs. 6,000</span>
+                        <span class="sale-price">Rs. 4,000</span>
+                    </div>
+                    <button onclick="addToCart('bag2', 'Aura Minimalist Backpack', 4000, 'bag2.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
